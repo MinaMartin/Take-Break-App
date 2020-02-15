@@ -1,0 +1,35 @@
+.game{
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: rgb(238, 210, 238);
+    text-align: center;
+}
+
+.game .title{
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+.game .content{
+    padding: 10px;
+    position: relative;
+}
+
+/* .game .content .overlay{
+    position: absolute;
+    background-color: brown;
+    width: 0;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .75;
+    z-index: 10;
+    transition: all 1s ease-in-out;
+} */
+
+/* .game:hover .overlay{
+    width: 100%;
+} */

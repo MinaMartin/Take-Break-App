@@ -1,0 +1,58 @@
+.Header{
+    background-color: rgb(83, 7, 99);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Header ul{
+    list-style: none;
+    vertical-align: middle;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header ul li{
+    display: inline-block;
+    height: 100%;
+    margin: 0 5px;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.Header ul div{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Logo{
+    font-size: 40px;
+    width: 300px;
+    color: rgb(247, 233, 233);
+    /* width: 100; */
+    /* margin-left: auto; */
+    
+}
+
+.Header ul li.active{
+    background-color: rgb(245, 238, 241);
+    color: rgb(44, 41, 41) !important;
+    border: 1px solid green;
+    border-radius: 3px;
+}
+
+.Header ul li a{
+    text-decoration: none;
+    color: rgb(245, 238, 241);
+}
+
+.Header ul li.active a{
+    color: rgb(83, 7, 99);
+}
+
+.logout{
+    cursor: pointer;
+}

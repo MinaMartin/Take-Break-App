@@ -1,0 +1,14 @@
+<div class="row playedGame" *ngIf="!isLoading">
+    <h3>{{playedGame.name}}</h3>
+    <p *ngIf="ratingAdded"><strong>Personal Rating: </strong>{{playedGame.personalRating}} /10</p>
+    <form class="form" (ngSubmit)="onSubmitHandler(ratingForm)" #ratingForm="ngForm" *ngIf="!ratingAdded">
+        <input 
+        type="number"  max="11" min="0" 
+        *ngIf="!ratingAdded" [(ngModel)]="rating" 
+        name="personalRating">
+        <button class="btn btn-warning ml-3" type="submit"   >
+            {{ratingAdded? "Change Rating" : "ADD Rating"}}
+        </button>
+    </form>
+</div>
+<app-spinner *ngIf="isLoading"></app-spinner>

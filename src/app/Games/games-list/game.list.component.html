@@ -1,0 +1,9 @@
+<div class="row games" *ngIf="!isLoading">
+    <div class="col-md-4" *ngFor="let game of games">
+        <app-game  [Game]="game" [PlayedListOrNot]="game.AddedToPlayedListOrNot"></app-game>
+    </div>
+</div>
+
+<p *ngIf="isEmpty" class="NoGames">No Games Were Found </p>
+
+<app-spinner *ngIf="isLoading"></app-spinner>

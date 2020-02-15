@@ -1,0 +1,8 @@
+<div class="row Links">
+    <a routerLink="/games" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">Games</a>
+    <a routerLink="/games/add-game" [routerLinkActive]="'active'"> Add Game</a> 
+    <a routerLink="/games/my-games" [routerLinkActive]="'active'"> My Games</a> 
+</div>
+<div class="games">
+    <router-outlet></router-outlet>
+</div>

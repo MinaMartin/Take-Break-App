@@ -1,0 +1,28 @@
+.authForm{
+    width: 90%;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 5px grey;
+    padding: 10px;
+    margin:auto;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+
+.NoGames{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(241, 135, 135);
+    border: 1px solid rgb(241, 135, 135);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media(min-width:500px){
+    .authForm{
+        width: 50%;
+    } 
+}

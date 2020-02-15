@@ -1,0 +1,30 @@
+.playedGame{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 5px yellow;
+    margin-bottom: 20px;
+    padding:8px;
+    transition: all .25s ease-in-out;
+    box-sizing: border-box;
+}
+
+.playedGame:hover{
+    background-color: thistle;
+}
+
+.playedGame h3{
+    color: teal;
+    margin: 0;
+}
+
+.playedGame p{
+    margin: 0;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

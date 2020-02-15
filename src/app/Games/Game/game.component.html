@@ -1,0 +1,17 @@
+<div class="game">
+    <h2 class="title">{{Game.name}}</h2>
+    <div class="content">
+        <div class="overlay"></div>
+        <h3>{{Game.category}}</h3>
+        <p><strong>Release year:</strong> {{Game.releaseYear}}</p>
+        <p><strong>Game price: </strong> {{Game.price}}$</p>
+        <p><strong>Rating:</strong> {{Game.rating}}/10</p>
+        <button class="btn btn-info mb-3" (click)='onAddToPlayedList(Game.name,Game.id)' *ngIf="!AddedToPlayedListOrNot">
+            Add to My Games
+        </button>
+        <button class="btn btn-warning mb-3" (click)="onEditGame(Game.id)">
+            Edit Game
+        </button>
+        <button class="btn btn-danger mb-3" (click)="onRemoveGame(Game.id)">Remove Game</button>
+    </div>
+</div>

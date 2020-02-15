@@ -1,0 +1,19 @@
+<nav class="Header">
+    <ul>
+        <li class="Logo">
+            Take Break App
+        </li>
+        <div>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <a routerLink="/">Home</a>
+            </li>
+            <li routerLinkActive="active"><a routerLink="/games" *ngIf='LoggedIn'>Games</a></li>
+            <li routerLinkActive="active" *ngIf='!LoggedIn'>
+                <a routerLink="/auth" >Login | SignUp</a>
+            </li>
+            <li *ngIf='LoggedIn' >
+                <a (click)="onLogout()" class="logout">Logout</a>
+            </li>
+        </div>
+    </ul>
+</nav>

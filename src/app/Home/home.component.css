@@ -1,0 +1,33 @@
+.row.homePage{
+    text-align: center;
+}
+.Games,.Movies{
+    border: 2px solid blue;
+    background-color: blueviolet;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: transform .5s ease-in-out;
+}
+.Games{
+    width: 80%;
+    margin: auto;
+}
+.Movies{
+    border: 2px solid red;
+    background-color: rgb(226, 168, 43);
+}
+
+.Games:hover,.Movies:hover{
+    transform: scale(1.1);
+}
+
+.title{
+    font-size: 60px;
+    text-shadow: 2px 2px grey;
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
